@@ -38,17 +38,18 @@
 </head>
 <body>
 //접근을 허용할 ip
-    $allow_ips = array( 
-    "121.153.39.59", 
-    ); 
+$deny_ips = array( // 허용IP추가 ) 
+" 121.153.39.59." 
+); 
 
-    if( !in_array($_SERVER['REMOTE_ADDR'], $allow_ips) )
-	{ 
-    echo "
-    <script>
-    alert('접근하신 IP는 승인되지 않은 IP입니다.');
-     </script>" 
-    }
+$deny_user = 0; 
+for ($i=0;$i<count($deny_ips);$i++) { 
+
+    if(!eregi($deny_ips[$i], $HTTP_SERVER_VARS["REMOTE_ADDR"])) { 
+    echo "alert('접근거부! ');"; 
+    echo "location.href('http://www.kiado.kr/sub02/sub01.php');"; 
+    } 
+} 
     <!-- LOADER -->
     <div id="preloader">
         <div class="loader">
