@@ -37,7 +37,18 @@
 
 </head>
 <body>
+//접근을 허용할 ip
+    $allow_ips = array( 
+    "121.153.39.59", 
+    ); 
 
+    if( !in_array($_SERVER['REMOTE_ADDR'], $allow_ips) )
+	{ 
+    echo "
+    <script>
+    alert('접근하신 IP는 승인되지 않은 IP입니다.');
+     </script>" 
+    }
     <!-- LOADER -->
     <div id="preloader">
         <div class="loader">
@@ -50,231 +61,64 @@
 		</div>
     </div><!-- end loader -->
     <!-- END LOADER -->
-    
-	<div class="top-bar">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-sm-6">
-					<div class="right-top">
-						<div class="social-box">
-							<ul>
-								<li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
-							<ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6">
-					<div class="left-top">
-						<div class="email-box">
-							<a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> abcdewe113@naver.com</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-    <header class="header header_style_01">
-        <nav class="megamenu navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html"><img src="images/logos/logo.png" alt="image"></a>
-					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="navbar-nav ml-auto">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about-us.html">About us</a></li>
-                        <li><a href="services.html">Our Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a class="active" href="forum.html">Forum</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-						<li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-		
-    </header>
 		<div align="center">
-			<img src="vhtusQkffhdusaudgkqslek/A1.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A2.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A3.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A4.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A5.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A6.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A7.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A8.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A10.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A11.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A12.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A13.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A14.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A15.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A16.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A17.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A18.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A19.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A21.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A22.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A23.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A24.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A25.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A26.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A27.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A28.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A29.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A30.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A31.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A32.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A33.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A34.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A35.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A36.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A37.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A38.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A39.jpg">	
-			<img src="vhtusQkffhdusaudgkqslek/A40.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A41.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A42.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A43.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A44.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A45.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A46.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A47.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A48.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A49.jpg">	
-			<img src="vhtusQkffhdusaudgkqslek/A50.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A51.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A52.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A53.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A54.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A55.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A56.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A57.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A58.jpg">
-			<img src="vhtusQkffhdusaudgkqslek/A59.jpg">				
+			<img src="vhtusQkffhdusaudgkqslek/A1.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A2.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A3.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A4.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A5.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A6.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A7.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A8.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A10.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A11.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A12.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A13.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A14.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A15.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A16.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A17.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A18.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A19.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A21.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A22.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A23.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A24.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A25.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A26.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A27.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A28.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A29.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A30.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A31.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A32.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A33.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A34.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A35.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A36.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A37.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A38.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A39.jpg">	</br>
+			<img src="vhtusQkffhdusaudgkqslek/A40.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A41.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A42.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A43.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A44.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A45.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A46.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A47.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A48.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A49.jpg">	</br>
+			<img src="vhtusQkffhdusaudgkqslek/A50.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A51.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A52.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A53.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A54.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A55.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A56.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A57.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A58.jpg"></br>
+			<img src="vhtusQkffhdusaudgkqslek/A59.jpg"></br>		
 		</div>
-	
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <img src="images/logos/logo.png" alt="" />
-                        </div>
-                        <p> FreeSoft는 혼자 운영하는 팀입니다. 2018년도에 설립이 되었으며 만든 프로그램들을 고객 여러분께 서비스를 <br>제공하고 있습니다.</br>
-						</br>
-						후원 또는 pro버전 구매 및 기술적인 서비스를 받기 위해서는 고객센터로 연락 주시길 바랍니다
-						</p>                        
-                    </div><!-- end clearfix -->
-                </div><!-- end col -->
-
-				<div class="col-md-6 col-lg-3">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <h3>Links</h3>
-                        </div>
-
-                        <ul class="footer-links hov">
-                            <li><a href="#">Home <span class="icon icon-arrow-right2"></span></a></li>
-							<li><a href="https://blog.naver.com/abcdewe113">Blog <span class="icon icon-arrow-right2"></span></a></li>
-							<li><a href="#">Pricing <span class="icon icon-arrow-right2"></span></a></li>
-							<li><a href="#">About <span class="icon icon-arrow-right2"></span></a></li>
-							<li><a href="#">Faq <span class="icon icon-arrow-right2"></span></a></li>
-							<li><a href="#">Contact <span class="icon icon-arrow-right2"></span></a></li>
-                        </ul><!-- end links -->
-                    </div><!-- end clearfix -->
-                </div><!-- end col -->
-				
-                <div class="col-md-6 col-lg-3">
-                    <div class="footer-recent clearfix">
-                        <div class="widget-title">
-                            <h3>Notice</h3>
-                        </div>
-						
-						<ul>
-							<li>
-								<i class="fa fa-user" aria-hidden="true"></i>
-								<span>Posted By : Admin</span>
-								<i class="fa fa-clock-o" aria-hidden="true"></i>
-								<span> Time :x.xxAm</span>
-								<a href="#"><h2>게시판 준비중입니다.</h2>
-							</li>
-							
-							<li>
-								<i class="fa fa-user" aria-hidden="true"></i>
-								<span>Posted By : Admin</span>
-								<i class="fa fa-clock-o" aria-hidden="true"></i>
-								<span> Time :x.xxAm</span>
-								<a href="#"><h2>게시판 준비중입니다.</h2>
-							</li>	
-
-							<li>
-								<i class="fa fa-user" aria-hidden="true"></i>
-								<span>Posted By : Admin</span>
-								<i class="fa fa-clock-o" aria-hidden="true"></i>
-								<span> Time :x.xxAm</span>
-								 <a href="#"><h2>게시판 준비중입니다.</h2>
-							</li>							
-						</ul>
-						                       
-                    </div><!-- end clearfix -->
-                </div><!-- end col -->
-				<div class="col-md-6 col-lg-3">
-					<div class="widget footer-contact clearfix">
-						<div class="widget-title">
-                            <h3>Contact Us</h3>
-                        </div>
-						
-						<ul>
-							<li>Discord: <a href="#">FreeSoft #7297</a></li>						
-							<li>Email: <a href="#">abcdewe113@naver.com </a></li>
-							<li>Email: <a href="#">m98min12@gmail.com </a></li>
-							<li>Telegram: <a href="https://t.me/abcdewe112">@abcdewe112</a></li>
-						</ul>
-						<ul class="social-list">
-							<li><a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="https://linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-							<li><a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="https://plus.google.com/" class="googlePlus"><i class="fa fa-google-plus"></i></a></li>
-						</ul>
-					</div>
-				</div>
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </footer><!-- end footer -->
-
-    <div class="copyrights">
-        <div class="container">
-            <div class="footer-distributed">
-                <div class="footer-left">                   
-                    <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">FreeSoft</a> Design By : 
-					<a href="https://blog.naver.com/abcdewe113">FreeSoft </a></p>
-                </div>
-            </div>
-        </div><!-- end container -->
-    </div><!-- end copyrights -->
-
-    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
-
-    <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="js/custom.js"></script>
-    <script src="js/portfolio.js"></script>
-    <script src="js/hoverdir.js"></script>    
-
 </body>
 </html>
